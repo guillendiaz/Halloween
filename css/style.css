@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+:root{
+	
+--color-principal: #ff5f6d;
+--color-boton-hover: #f75160;
+--color-naranja: #ffb270;
+--color-negro: #3e3e3e;
+--color-general: #999999;
+	
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: var(--color-general);
+}
+
+.header-area.sticky {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+.header-area.sticky{
+	background-color: #fff !important;
+}
+
+.header-area.sticky .navbar-light .navbar-nav .nav-link{
+	color: var(--color-negro);
+}
+.header-area.sticky .navbar-light .navbar-nav .active .nav-link{
+	color: var(--color-azul-oscuro);
+}
+.header-area.sticky .navbar-light .navbar-brand {
+	color: var(--color-negro);
+}
+
+h1,h2,h3,h4,h5,h6{
+	color: var(--color-negro);
+	font-weight: 400;
+}
+
+#hero{
+	background-image: url("../img/bg-hero.png");
+	background-size: cover;
+	height: 100%vh;
+	color: white;
+	padding-top: 3%;
+}
+
+#hero h2{
+	font-size: 4em;
+	padding-top: 20%;
+	font-weight: 700;
+}
+
+#hero .info {
+	margin-left: -10%;
+}
+
+#hero p{
+	font-size: 1.3em;
+	padding-right: 20%;
+}
+
+.btn-primary {
+	text-transform: uppercase;
+	background-color: var(--color-principal);
+	padding: 1% 5%;
+	border: 0;
+	font-weight: 500;
+}
+
+.btn-primary:hover {
+	background-color: var(--color-boton-hover);
+}
+
+.infoicon {
+	padding: 25% 5%;
+	transition:  all 0.3s ease-in-out;
+}
+
+#motoother {
+	background-color: #faf9ff;
+}
+
+#motoother .infocont {
+	overflow: hidden;
+}
+
+#motoother img {
+	margin-right: 10px;
+}
+
+.infoicon:hover {
+	box-shadow: 0 0 10px 0 #eee;
+	transform: translateY(-10px);
+	transition:  all 0.3s ease-in-out;
+}
