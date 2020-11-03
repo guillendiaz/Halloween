@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Shojumaru&family=Stylish&display=swap');
+
 :root{
-	
---color-principal: #ff5f6d;
---color-boton-hover: #f75160;
---color-naranja: #ffb270;
---color-negro: #3e3e3e;
---color-general: #999999;
+	--color-principal: #ff5f6d;
+	--color-boton-hover: #f75160;
+	--color-naranja: #ffac2c;
+	--color-negro: #29373c;
+	--color-general: #999;
 	
 }
 
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Stylish', sans-serif;
 	font-size: 14px;
-	color: var(--color-general);
 }
 
 .header-area.sticky {
@@ -28,21 +27,28 @@ body{
 }
 
 .header-area.sticky .navbar-light .navbar-nav .nav-link{
-	color: var(--color-negro);
+	color: var(--color-naranja);
 }
 .header-area.sticky .navbar-light .navbar-nav .active .nav-link{
-	color: var(--color-azul-oscuro);
+	color: var(--color-naranja);
 }
 .header-area.sticky .navbar-light .navbar-brand {
-	color: var(--color-negro);
+	color: var(--color-naranja);
 }
 
-h1,h2,h3,h4,h5,h6{
-	color: var(--color-negro);
-	font-weight: 400;
+nav .navtitle{
+	font-family: 'Shojumaru';
+	font-size: 10px;
+}
+
+nav .navsub{
+	font-family: 'Nanum Pen Script';
+	font-size: 25px;
+
 }
 
 #hero{
+	text-align: center;
 	background-image: url("../img/bg-hero.png");
 	background-size: cover;
 	height: 100%vh;
@@ -50,52 +56,127 @@ h1,h2,h3,h4,h5,h6{
 	padding-top: 3%;
 }
 
+#hero h1{
+	font-family: 'Shojumaru';
+	font-size: 5em;
+	color: var(--color-naranja);
+	padding-top: 15%;
+}
+
 #hero h2{
+	font-family: 'Nanum Pen Script';
+	font-size: 3em;
+	padding: 2% 0;
+}
+
+#hero h2 a{
+	color: var(--color-naranja);
+	border-bottom: 1px dashed var(--color-naranja);
+}
+
+#hero .btn-outline-light{
+	margin: 2% 10px;
+	font-size: 1.5em;
+	border: 2px solid;
+}
+
+#hero .btn-warning{
+	margin: 2%;
+	margin-bottom: 5%;
+	font-size: 1.5em;
+}
+
+#offer{
+	font-family: 'Nanum Pen Script';
+	margin: 5% 0;
+	text-align: center;
+	padding: 5% 0;
+}
+
+#offer h2{
 	font-size: 4em;
-	padding-top: 20%;
-	font-weight: 700;
 }
 
-#hero .info {
-	margin-left: -10%;
+#offer h3{
+	font-size: 2.5em;
+	font-weight: 400;
 }
 
-#hero p{
+.imgoffer{
+	margin: 8% 0;
+}
+
+#offer img{
+	height: 80px;
+	width: 80px;
+}
+
+.infoicon h3, p{
+	margin: 5% 0;
+}
+
+.infoicon p{
+	font-family: 'Stylish';
+	color: var(--color-general);
+	font-size: 1.5em;
+}
+
+#faq{
+	font-family: 'Nanum Pen Script';
+	padding: 8% 0;
+	background-color: #F3F3E4;
+}
+
+#faq img{
+	height: 400px;
+	width: 400px;
+}
+
+#faq h2{
+	font-size: 4em;
+}
+
+#question{
+
+	padding: 8% 35%;
+}
+
+#question img{
+	height: 100px;
+	width: 100px;
+}
+
+#question h2{
+	font-family: 'Nanum Pen Script';
+	font-size: 2.8em;
+}
+
+#question p{
+	font-size:  1em;
+}
+.infoq{
+	margin: 0 10%;
+}
+
+#contact{
 	font-size: 1.3em;
-	padding-right: 20%;
+	background-color:  #F3F3E4;
+	padding: 8% 0;
+	text-align: center;
 }
 
-.btn-primary {
-	text-transform: uppercase;
-	background-color: var(--color-principal);
-	padding: 1% 5%;
-	border: 0;
-	font-weight: 500;
+footer{
+	padding: 5% 0;
+	text-align: center;
+	background-color: var(--color-naranja);
 }
 
-.btn-primary:hover {
-	background-color: var(--color-boton-hover);
+footer img{
+	margin: 5% 0;
+	height: 300px;
+	width: 300px;
 }
 
-.infoicon {
-	padding: 25% 5%;
-	transition:  all 0.3s ease-in-out;
-}
-
-#motoother {
-	background-color: #faf9ff;
-}
-
-#motoother .infocont {
-	overflow: hidden;
-}
-
-#motoother img {
-	margin-right: 10px;
-}
-
-.infoicon:hover {
-	box-shadow: 0 0 10px 0 #eee;
-	transform: translateY(-10px);
-	transition:  all 0.3s ease-in-out;
+footer h3{
+	font-size: 1.5em;
 }
